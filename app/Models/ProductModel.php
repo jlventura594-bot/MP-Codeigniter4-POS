@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UserModel extends Model
+class ProductModel extends Model
 {
-    protected $table = 'users';
+    protected $table = 'products';
     protected $primaryKey = 'id';
 
     protected $allowedFields = [
-        'username',
-        'full_name',
-        'password',
-        'avatar',
+        'name',
+        'price',
+        'stock_quantity',
+        'image',
         'created_at'
     ];
 }

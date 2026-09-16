@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <title>Users</title>
+    <title>Products</title>
 </head>
 
 <body>
+
     <nav>
         <a href="<?= site_url('/') ?>">Home</a> |
         <a href="<?= site_url('about') ?>">About</a> |
@@ -15,19 +16,23 @@
     </nav>
 
     <hr>
-    <h1>User Accounts</h1>
 
-    <table border="1" cellpadding="10">
+    <h1>Products</h1>
+
+    <table border="1">
+
         <tr>
-            <th>Username</th>
-            <th>Full Name</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Stock</th>
         </tr>
 
-        <?php foreach ($users as $user): ?>
+        <?php foreach ($products as $product): ?>
 
             <tr>
-                <td><?= $user['username'] ?></td>
-                <td><?= $user['full_name'] ?></td>
+                <td><?= $product['name']; ?></td>
+                <td><?= $product['price']; ?></td>
+                <td><?= $product['stock_quantity']; ?></td>
             </tr>
 
         <?php endforeach; ?>

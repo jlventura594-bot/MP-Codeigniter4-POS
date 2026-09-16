@@ -1,30 +1,19 @@
-# IT0049 TFA1 - Point of Sale System
+# IT0049 Midterm Project - Complete POS System
 
-## Student
-John Laurence Ventura
-
-## Description
-A Point-of-Sale web application developed using CodeIgniter 4.
-
-## Pages
-- Home
-- About
-- Customer Accounts
-- User Accounts
-
-## Features
-- MVC Architecture
+Current Progress:
+- CodeIgniter 4 Setup
+- MVC Structure
 - Routing
-- Controllers
-- Views
-- Static PHP Arrays
-- Foreach Loops
+- Customer Database Integration
+- User Database Integration
+- MySQL Database
+- GitHub Repository
 
-## Installation
-
-1. Clone repository
-
-2. Install dependencies
-
-```bash
-composer install
+Planned Features:
+- Authentication
+- Product Management
+- Customer CRUD
+- User CRUD
+- Sales Recording
+- Sales History
+- Inventory Management

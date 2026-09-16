@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Models\CustomerModel;
+use App\Models\ProductModel;
 
-class Customers extends BaseController
+class Products extends BaseController
 {
     public function index()
     {
@@ -12,13 +12,12 @@ class Customers extends BaseController
             return $redirect;
         }
 
-        $model = new CustomerModel();
+        $model = new ProductModel();
 
-        $data['customers'] = $model->findAll();
+        $data['products'] = $model->findAll();
 
-        return view('customers', $data);
+        return view('products', $data);
     }
-
 
     protected function requireLogin()
     {
