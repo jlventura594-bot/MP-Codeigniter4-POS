@@ -21,7 +21,17 @@
     <hr>
     <h1>About Page</h1>
 
-    <p>This is my first CodeIgniter project.</p>
+    <p>A midterm project for managing customers, staff, products, and sales.</p>
+
+    <h2>Group Members</h2>
+
+    <ul>
+        <li>John Laurence Ventura</li>
+        <li>Leann Marie Querubin</li>
+        <li>Kobe Gabrielle Cadorna</li>
+        <li>Neil Francis Floro</li>
+        <li>Mark David Paynor</li>
+    </ul>
 
 </body>
 
