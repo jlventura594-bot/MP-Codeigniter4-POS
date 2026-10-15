@@ -2,6 +2,13 @@
 
 A midterm project for managing customers, staff, products, and sales.
 
+Group Members:
+John Laurence Ventura
+Leann Marie Querubin
+Kobe Gabrielle Cadorna
+Neil Francis Floro
+Mark David Paynor
+
 Repository: https://github.com/jlventura594-bot/MP-Codeigniter4-POS
 
 ## Project Status
