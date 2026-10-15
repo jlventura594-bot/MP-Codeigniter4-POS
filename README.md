@@ -10,6 +10,7 @@ Group Members:
   - Mark David Paynor
 
 Repository: https://github.com/jlventura594-bot/MP-Codeigniter4-POS
+
 Hosted Website Link: https://pos-system-midterm.infinityfreeapp.com/index.php/login
 
 ## Project Status
