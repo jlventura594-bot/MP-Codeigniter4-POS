@@ -1,0 +1,269 @@
+:root {
+    --blue: #3478f6;
+    --blue-light: #edf4ff;
+    --text: #172033;
+    --muted: #6b7280;
+    --background: #f5f7fb;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --danger: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 28px 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    padding: 18px 22px;
+    margin: 0 -28px 35px;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+    padding: 10px 15px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--blue);
+    background: var(--blue-light);
+}
+
+/* Headings */
+h1 {
+    margin: 25px 0;
+    color: var(--text);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--text);
+}
+
+/* Links */
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: #1d4ed8;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 25px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    padding: 16px;
+    color: var(--text);
+    background: #f8fafc;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+td {
+    padding: 16px;
+    color: #374151;
+    border-top: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+tr:hover td {
+    background: #fafcff;
+}
+
+/* Images inside tables */
+td img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    padding: 10px 17px;
+    color: white;
+    background: var(--blue);
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Forms */
+form {
+    max-width: 600px;
+    padding: 25px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: white;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(52, 120, 246, 0.15);
+}
+
+/* Delete buttons */
+form button[name="delete"],
+button.delete {
+    background: var(--danger);
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    body {
+        padding: 0 15px 30px;
+    }
+
+    nav {
+        margin: 0 -15px 25px;
+        padding: 14px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Table action buttons */
+td.actions {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.action-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    color: white;
+    background: #3478f6;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.action-link:hover {
+    color: white;
+    background: #1d4ed8;
+}
+
+.action-form {
+    display: inline-flex !important;
+    align-items: center;
+    margin: 0;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.action-form button {
+    margin: 0;
+    background: #ef4444;
+}
+
+.action-form button:hover {
+    background: #dc2626;
+}
+
+.product-image,
+.image-placeholder {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.image-placeholder {
+    color: #8b95a7;
+    background: #eef2f7;
+    border: 1px dashed #cbd5e1;
+    font-size: 12px;
+}
