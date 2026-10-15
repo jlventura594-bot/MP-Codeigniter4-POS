@@ -17,6 +17,8 @@ $quantity = is_string($quantity) ? $quantity : '';
 <head>
     <meta charset="UTF-8">
     <title>Record Sale</title>
+
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 </head>
 
 <body>

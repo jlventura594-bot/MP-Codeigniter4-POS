@@ -3,6 +3,8 @@
 
 <head>
     <title>Login</title>
+
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 </head>
 
 <body>

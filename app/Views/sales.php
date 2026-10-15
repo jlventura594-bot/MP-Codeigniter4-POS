@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Sales History</title>
+
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 </head>
 
 <body>

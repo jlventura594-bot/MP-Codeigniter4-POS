@@ -3,6 +3,8 @@
 
 <head>
     <title>Home</title>
+
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
 </head>
 
 <body>
