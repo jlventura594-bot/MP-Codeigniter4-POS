@@ -10,12 +10,11 @@ Group Members:
   - Mark David Paynor
 
 Repository: https://github.com/jlventura594-bot/MP-Codeigniter4-POS
+Hosted Website Link: https://pos-system-midterm.infinityfreeapp.com/index.php/login
 
 ## Project Status
 
-- Backend features implemented.
-- Manual functional testing performed during development.
-- Frontend styling and production deployment pending.
+- Complete
 
 Live website: To be added after deployment.
 
@@ -218,14 +217,3 @@ dependencies locally and include `vendor` in the deployment upload.
 `php spark serve` is for local development.
 
 The current application timezone is UTC.
-
-## Team Responsibilities
-
-| Responsibility | Owner |
-|----------------|-------|
-| Backend, database export, and GitHub handoff | Backend maintainer |
-| Interface styling and layout | Frontend maintainer |
-| Hosting configuration and live verification | Hosting maintainer |
-
-After deployment, update this README with the live website URL
-and the team members' names.
